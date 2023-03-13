@@ -1,0 +1,166 @@
+Microsoft Windows [Version 10.0.19044.2604]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   src/test/java/com/test/practice/Test.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git commit -m "this is my first commit"
+[main aa756a9] this is my first commit
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git push
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (10/10), 753 bytes | 188.00 KiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/shivanand-jangam/batch2repo.git
+   f7f4ee9..aa756a9  main -> main
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git branch
+* main
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git pull
+From https://github.com/shivanand-jangam/batch2repo
+ * [new branch]      shridhar1  -> origin/shridhar1
+Already up to date.
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git checkout shridhar1
+Switched to a new branch 'shridhar1'
+branch 'shridhar1' set up to track 'origin/shridhar1'.
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git branch
+  main
+* shridhar1
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git status
+On branch shridhar1
+Your branch is up to date with 'origin/shridhar1'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/test/java/com/test/practice/Test.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git add src/test/java/com/test/practice/Test.java
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git commit -m "my test commit"
+[shridhar1 01d4859] my test commit
+ 1 file changed, 1 insertion(+)
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git push
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (10/10), 704 bytes | 704.00 KiB/s, done.
+Total 10 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/shivanand-jangam/batch2repo.git
+   aa756a9..01d4859  shridhar1 -> shridhar1
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git branch
+  main
+* shridhar1
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git checkout shrikant1
+error: pathspec 'shrikant1' did not match any file(s) known to git
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 630 bytes | 210.00 KiB/s, done.
+From https://github.com/shivanand-jangam/batch2repo
+   aa756a9..1f042ad  main       -> origin/main
+ * [new branch]      shrikant1  -> origin/shrikant1
+Updating aa756a9..1f042ad
+Fast-forward
+ My-Test-Project/src/test/java/com/test/practice/Test.java | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git checkout shrikant1
+Switched to a new branch 'shrikant1'
+branch 'shrikant1' set up to track 'origin/shrikant1'.
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git status
+On branch shrikant1
+Your branch is up to date with 'origin/shrikant1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        src/test/java/com/test/practice/Test2.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git status
+On branch shrikant1
+Your branch is up to date with 'origin/shrikant1'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/test/java/com/test/practice/Test.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        src/test/java/com/test/practice/Test2.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git add src/test/java/com/test/practice/Test.java src/test/java/com/test/practice/Test2.java
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git commit -m "added new file and also modify the existing file"
+[shrikant1 d4cd257] added new file and also modify the existing file
+ 2 files changed, 11 insertions(+)
+ create mode 100644 My-Test-Project/src/test/java/com/test/practice/Test2.java
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>git push
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 879 bytes | 219.00 KiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/shivanand-jangam/batch2repo.git
+   1f042ad..d4cd257  shrikant1 -> shrikant1
+
+C:\Users\lenovo\eclipse-workspace\Sridhar_Project\batch2repo\My-Test-Project>
+
+
+
+
+
+
+
+
+
